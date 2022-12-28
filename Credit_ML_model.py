@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Nov  8 22:20:06 2018
-
-@author: Aniruddha choudhury
 """
 import numpy as np
 import pandas as pd
@@ -28,7 +25,7 @@ y=train.seriousdlqin2yrs
 
 
 
-
+#Split dataset train ->  .7 : test -> .3
 from sklearn.model_selection  import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.30, random_state = 0)
 
